@@ -20,7 +20,7 @@ cd "$SCRIPT_DIR"
 git add content/
 git add -A
 git commit -m "sync: update content from obsidian vault" || echo "No changes to commit"
-git push origin v4
+git push origin main
 
 # Restore symlink for local dev
 rm -rf "$CONTENT_DIR"
