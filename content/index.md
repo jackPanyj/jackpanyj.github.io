@@ -2,4 +2,12 @@
 title: Jack's Blog
 ---
 
-Welcome to my digital garden.
+Hi, I'm Jack 👋
+
+前端开发者，关注 Web 技术、开发工具和效率提升。这里记录我的学习笔记和技术探索。
+
+## 最近更新
+
+- [[Claude Chats/2026-02-20 开发环境工具配置|开发环境工具配置]]
+- [[Claude Chats/2026-02-16 终端工具栈升级|终端工具栈升级]]
+- [[Claude Chats/2025-02-12 桌面应用与开发工具讨论|桌面应用与开发工具讨论]]
