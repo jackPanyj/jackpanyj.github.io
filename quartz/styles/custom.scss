@@ -1,3 +1,36 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Cyberpunk theme
+.page-title {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.6), 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-shadow: 0 0 8px rgba(255, 46, 204, 0.5);
+  }
+}
+
+hr {
+  border-color: rgba(0, 240, 255, 0.2);
+}
+
+pre {
+  border: 1px solid rgba(0, 240, 255, 0.15) !important;
+}
+
+.search-button,
+.darkmode {
+  &:hover {
+    background: rgba(0, 240, 255, 0.1);
+  }
+}
+
+.callout {
+  border-left-color: #00f0ff;
+}
+
+::selection {
+  background: rgba(255, 46, 204, 0.3);
+}
