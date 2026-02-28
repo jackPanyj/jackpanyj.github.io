@@ -5,8 +5,12 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 OBSIDIAN_VAULT="$HOME/personal/obsidian"
 CONTENT_DIR="$SCRIPT_DIR/content"
 
-# Remove symlink, copy fresh content
-rm -f "$CONTENT_DIR"
+# Remove symlink or directory, copy fresh content
+if [ -L "$CONTENT_DIR" ]; then
+  rm -f "$CONTENT_DIR"
+elif [ -d "$CONTENT_DIR" ]; then
+  rm -rf "$CONTENT_DIR"
+fi
 mkdir -p "$CONTENT_DIR"
 rsync -av --delete \
   --exclude='.obsidian' \
